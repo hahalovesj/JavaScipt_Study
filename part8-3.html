@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<!--
+    计时器setInterval(代码,交互时间);
+    1. 代码：要调用的函数或要执行的代码串。
+    2. 交互时间：周期性执行或调用表达式之间的时间间隔，以毫秒计（1s=1000ms）。
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>定时器</title>
+<script type="text/javascript">
+ var attime;
+  function clock(){
+    var time=new Date();          
+    attime=time.getHours()+":"+time.getMinutes() +":"+time.getSeconds();
+    document.getElementById("clock").value = attime;
+  }
+  setInterval(clock,1000);
+</script>
+</head>
+<body>
+<form>
+<input type="text" id="clock" size="20"  />
+</form>
+</body>
+</html>
