@@ -1,0 +1,38 @@
+<!DOCTYPE  HTML>
+<html >
+    <!--
+
+    在页面显示如下图所示的图案：
+    *   
+    **
+    ***
+    **** 
+    -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>数组</title>
+<script type="text/javascript">
+
+ //创建数组
+ var arr=['*','##',"***","&&","****","##*"];
+   arr[7] = "**";
+ //显示数组长度
+ alert(arr.length);
+ 
+ //将数组内容输出，完成达到的效果。
+for (i=0;i<arr.length-1;i++){
+    if(i%2==0&&arr[i]!=null){ 
+        document.write(arr[i]+"<br>");
+    }
+    if(i==1){
+        document.write(arr[7]+"<br>");
+    }
+    
+   
+}
+
+</script>
+</head>
+<body>
+</body>
+</html>
